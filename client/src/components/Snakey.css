@@ -1,0 +1,137 @@
+.snakey-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+.snakey-title {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.no-habits {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.habits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.habit-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.habit-item.habit-completed {
+  background: #f0f0f0;
+  opacity: 0.8;
+}
+
+.habit-info {
+  flex: 1;
+}
+
+.habit-name {
+  color: #333;
+  font-size: 20px;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+.habit-description {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+
+.habit-last-completed {
+  color: #27ae60;
+  font-size: 12px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.habit-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.habit-complete-btn {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(39, 174, 96, 0.3);
+  min-width: 120px;
+}
+
+.habit-complete-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(39, 174, 96, 0.4);
+}
+
+.habit-complete-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.habit-complete-btn--disabled {
+  background: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.habit-delete-btn {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+}
+
+.habit-delete-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(231, 76, 60, 0.4);
+}
+
+.habit-delete-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.habit-delete-btn--disabled {
+  background: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Адаптивность для мобильных */
